@@ -4,9 +4,12 @@ The files in this repository were used to configure the network depicted below.
 
 <img src="https://raw.githubusercontent.com/MateiGanea/ELK-Stack-Project/main/network%20diagram.png" alt="network diagram">
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure using Ansible. They can be used to either recreate the entire deployment pictured above. Alternatively, select playbook files may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+  <a href="https://github.com/MateiGanea/ELK-Stack-Project/blob/main/install_elk.yml">ELK playbook</a>
+  <a href="https://github.com/MateiGanea/ELK-Stack-Project/blob/main/pentest.yml">DVWA playbook</a>
+  <a href="https://github.com/MateiGanea/ELK-Stack-Project/blob/main/filebeat-playbook.yml">filebeat playbook</a>
+  <a href="https://github.com/MateiGanea/ELK-Stack-Project/blob/main/metricbeat_playbook.yml">metricbeat playbook</a>
 
 This document contains the following details:
 - Description of the Topologu
@@ -21,7 +24,7 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
+Load balancing ensures that the application will be redundant, in addition to restricting malicious access to the network.
 - _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
@@ -33,10 +36,10 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| Jump Box | Gateway  | 10.0.0.4   | Ubuntu LTS 18.04 |
+| Web-1    |          | 10.0.0.5   | Ubuntu LTS 18.04 |
+| Web-2    |          | 10.0.0.6   | Ubuntu LTS 18.04 |
+| ELK-1    |          | 10.1.0.4   | Ubuntu LTS 18.04 |
 
 ### Access Policies
 
