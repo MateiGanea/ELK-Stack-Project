@@ -97,5 +97,6 @@ SSH into the control node and follow the steps below:
 - Update the hosts file to include the intended elk and webservers private ip addresses
 - Run the playbook, and navigate to http://20.219.111.249:5601/ (example) to check that the installation worked as expected.
 
+`wget https://raw.githubusercontent.com/MateiGanea/ELK-Stack-Project-WIP/main/ansible/install_elk.yml`
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+`ansible-playbook elk.yml`
