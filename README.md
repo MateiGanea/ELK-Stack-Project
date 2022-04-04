@@ -37,12 +37,12 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 The configuration details of each machine may be found below.
 
-| Name     | Function | IP Address       | Operating System        |
-|----------|----------|------------------|-------------------------|
-| Jump Box | Gateway  | 20.53.232.160    | Ubuntu Server LTS 18.04 |
-| Web-1    |          | 10.0.0.5         | Ubuntu Server LTS 18.04 |
-| Web-2    |          | 10.0.0.6         | Ubuntu Server LTS 18.04 |
-| ELK-1    |          | 20.219.111.249   | Ubuntu Server LTS 18.04 |
+| Name     | Function   | IP Address       | Operating System        |
+|----------|------------|------------------|-------------------------|
+| Jump Box | Gateway    | 20.53.232.160    | Ubuntu Server LTS 18.04 |
+| Web-1    | Server     | 10.0.0.5         | Ubuntu Server LTS 18.04 |
+| Web-2    | Server     | 10.0.0.6         | Ubuntu Server LTS 18.04 |
+| ELK-1    | Aggreation | 20.219.111.249   | Ubuntu Server LTS 18.04 |
 
 ### Access Policies
 
