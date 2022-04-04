@@ -36,7 +36,6 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - metricbeat monitors system performance/load status
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function | IP Address | Operating System        |
 |----------|----------|------------|-------------------------|
@@ -67,7 +66,6 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - elimination of human error in instalation 
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
 - Install Docker
 - Install Python3-PIP
 - Allocate virtual memory
@@ -88,9 +86,8 @@ We have installed the following Beats on these machines:
 - Filebeat
 
 These Beats allow us to collect the following information from each machine:
-- System Logs
-- System load data
--  _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+- Filebeat allows us to look at live log data from both webservers this means we can monitor events such as failed ssh logins and sudoing
+- metricbeat enables monitoring of all kinds of system data such as cpu usage, memory usage and network activity
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
