@@ -99,4 +99,6 @@ SSH into the control node and follow the steps below:
 
 `wget https://raw.githubusercontent.com/MateiGanea/ELK-Stack-Project-WIP/main/ansible/install_elk.yml`
 
+make sure to edit all config files
+
 `ansible-playbook elk.yml`
