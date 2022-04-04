@@ -94,12 +94,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the playbook file to /etc/ansible inside the ansible container on the jumbox.
-- Update the hosts file to include the servers private ip addresses
+- Update the hosts file to include the intended elk and webservers private ip addresses
 - Run the playbook, and navigate to http://20.219.111.249:5601/ (example) to check that the installation worked as expected.
-
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
