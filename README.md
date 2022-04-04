@@ -46,7 +46,7 @@ The configuration details of each machine may be found below.
 
 ### Access Policies
 
-The machines on the internal network are not exposed to the public Internet. 
+The machines on the internal network are not exposed to the public Internet the webservers do not have public ip addresses. 
 
 Machines within the network can only be accessed by my personal computer. However the load balancer could be exposed to the public internet to provide acces to the webservers providing redundancy as well as protecion from denial of service, I have chosen not to since this is a personal project and the webapps are obviously vulnerable by nature.
 
